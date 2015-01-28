@@ -1,5 +1,0 @@
-rm -rf /var/lib/tomcat7/webapps/MyApp
-cp -r MyApp /var/lib/tomcat7/webapps/
-chmod 777 -R /var/lib/tomcat7/webapps/MyApp
-
-service tomcat7 restart
