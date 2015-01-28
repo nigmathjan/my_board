@@ -1,0 +1,34 @@
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD
+    Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+ 
+<web-app>
+    <servlet>
+        <servlet-name>MyShowPage</servlet-name>
+        <servlet-class>MyShowPage</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>MyShowPage</servlet-name>
+        <url-pattern>/my_board</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MyShowThread</servlet-name>
+        <servlet-class>MyShowThread</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>MyShowThread</servlet-name>
+        <url-pattern>/show_thread</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MyMakeNewThread</servlet-name>
+        <servlet-class>MyMakeNewThread</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>MyMakeNewThread</servlet-name>
+        <url-pattern>/make_thread</url-pattern>
+    </servlet-mapping>
+</web-app>

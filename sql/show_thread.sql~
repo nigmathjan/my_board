@@ -1,0 +1,19 @@
+USE my_board;
+
+DROP PROCEDURE IF EXISTS create_thread;
+
+DELIMITER //
+CREATE PROCEDURE create_thread
+(
+	IN arg_post_name CHAR(100),
+	IN arg_post_theme CHAR(255),
+	IN arg_post_text TEXT(2047)
+)
+LANGUAGE SQL
+DETERMINISTIC
+SQL SECURITY DEFINER
+COMMENT ''
+BEGIN
+END//
+
+-- CALL create_thread('Сырно', 'Хуита', 'Hi!');
